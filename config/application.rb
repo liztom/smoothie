@@ -34,5 +34,3 @@ module Smoothie
 
   end
 end
-
-config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
