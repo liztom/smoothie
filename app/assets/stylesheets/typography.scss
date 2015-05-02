@@ -1,0 +1,49 @@
+html {
+  font-weight: 200;
+  font-size: 18px;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+}
+
+h1 {
+}
+
+h2  {
+}
+
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h6 {
+}
+
+p  {
+
+}
+
+a {
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  &:hover {
+      border-color: transparent;
+      color: $color-primary;
+      text-decoration: none;
+  }
+
+}
+

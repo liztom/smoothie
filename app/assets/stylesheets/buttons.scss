@@ -1,0 +1,23 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.btn {
+    background-color: $color-primary;
+    display: block;
+    text-align: center;
+    border: 2px solid $color-primary;
+    color: $color-secondary;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: darken($color-primary, 20%);
+        border-color: darken($color-primary, 20%);
+        color: $color-secondary;
+    }
+}
+
+.btn--large {
+    @extend .btn;
+    padding: 70px 0;
+    font-size: 50px;
+}
