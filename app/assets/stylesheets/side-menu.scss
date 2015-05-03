@@ -1,0 +1,14 @@
+.side-menu__categories {
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: $color-success;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    &:hover {
+        background-color: darken($color-success, 20%);
+    }
+}

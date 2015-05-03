@@ -1,21 +1,57 @@
 <div class="row">
-    <div class="columns medium-3">
-        <div id="js-ingredients" class="ingredients">
-            <div class="ingredient">spinach</div>
-            <div class="ingredient">carrots</div>
-            <div class="ingredient">mango</div>
-            <div class="ingredient">peach</div>
-            <div class="ingredient">lemon</div>
-        </div>
-    </div>
-    <div class="columns medium-6 medium-centered">
-        <div id="js-container" class="container--tall">
-        </div>
+    <div class="columns">
+        <h1>Acai</h1>  
     </div>
 </div>
 <div class="row">
-    <div class="columns">
-        <%= link_to '', cart_path, class: 'fa fa-shopping-cart fa-5x'  %>
-        <%= link_to '', root_path, class: 'fa fa-home fa-5x'  %>
+    <div class="columns medium-2">
+        <div class="side-menu">
+            <div class="side-menu__categories">
+                Presets
+            </div>
+            <div class="side-menu__categories">
+                Fruits
+            </div>
+            <div class="side-menu__categories">
+                Veggies
+            </div>
+            <div class="side-menu__categories">
+                Roots
+            </div>
+            <div class="side-menu__categories">
+                Boosts
+            </div>
+            <div class="side-menu__categories">
+                Blended
+            </div>
+        </div>
+    </div>
+    <div class="columns medium-10">
+        <div class="row">
+            <div class="columns medium-3">
+                <div id="js-ingredients" class="ingredients">
+                    <div class="ingredient">spinach</div>
+                    <div class="ingredient">carrots</div>
+                    <div class="ingredient">mango</div>
+                </div>
+            </div>
+            <div class="columns medium-6">
+                <div id="js-container" class="container--tall">
+                </div>
+            </div>
+            <div class="columns medium-3">
+                <div id="js-ingredients2" class="ingredients">
+                    <div class="ingredient">peach</div>
+                    <div class="ingredient">lemon</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns">
+                <%= link_to '', cart_path, class: 'fa fa-shopping-cart fa-5x'  %>
+                <%= link_to '', root_path, class: 'fa fa-home fa-5x'  %>
+            </div>
+        </div>
     </div>
 </div>
+
