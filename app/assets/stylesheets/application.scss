@@ -16,6 +16,10 @@
 /* Foundation */
 @import "foundation/components/grid";
 @import "foundation/components/block-grid";
+
+/* Font Awesome */
+@import "font-awesome-sprockets";
+@import "font-awesome";
  
 /* base styles */
 @import "settings";
@@ -24,3 +28,4 @@
 /* components */
 @import "buttons";
 @import "ingredients";
+@import "container";

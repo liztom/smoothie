@@ -15,6 +15,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'activeadmin', github: 'activeadmin'
 gem 'foundation-rails'
+gem 'font-awesome-sass'
 
 group :development do
   gem 'byebug'

@@ -35,10 +35,9 @@ p  {
 
 a {
   color: #000;
-  border-bottom: 1px solid #000;
   padding-bottom: 2px;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   &:hover {
       border-color: transparent;
       color: $color-primary;

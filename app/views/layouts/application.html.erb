@@ -10,12 +10,13 @@
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    
   </head>
 
   <body>
     <div class="row">
       <div class="columns medium-4">
-          <img src="http://placehold.it/500x200/&text=Logo">
+          <%= link_to image_tag('http://placehold.it/500x200/&text=Logo'), root_path %>
       </div>
       <div class="columns medium-8">
           <img src="http://placehold.it/500x200">
