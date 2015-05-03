@@ -1,0 +1,29 @@
+.cart {
+    width: 100%;
+}
+
+.cart__heading {
+    text-align: left;
+    font-size: 18px;
+}
+
+.cart__quantity {
+    text-align: center;
+    font-size: 40px;
+}
+
+.cart__tip {
+    background-color: $color-primary;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    &:hover {
+        background-color: darken($color-primary, 20%);
+    }
+}

@@ -1,10 +1,15 @@
+.ingredients {
+    min-height: 500px;
+}
+
 .ingredient {
     background-color: $color-secondary;
     height: 100px;
-    width: 150px;
+    width: 100%;
     text-align: center;
     line-height: 100px;
     color: black;
     border-radius: 5%;
     cursor: pointer;
+    margin: 5px 0;
 }

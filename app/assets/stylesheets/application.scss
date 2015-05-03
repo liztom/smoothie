@@ -24,8 +24,12 @@
 /* base styles */
 @import "settings";
 @import "typography";
+@import "utilities";
 
 /* components */
 @import "buttons";
 @import "ingredients";
 @import "container";
+@import "navigation";
+@import "cart";
+

@@ -1,1 +1,87 @@
-cart
+<div class="row">
+    <div class="columns medium-8 medium-centered">
+        <table class="cart">
+            <th class="cart__heading">Picture</th>
+            <th class="cart__heading">Name</th>
+            <th class="cart__heading">Quantity</th>
+            <th class="cart__heading">Size</th>
+            <th class="cart__heading">Price</th>
+
+            <tr>
+                <td>
+                    <img src="http://placehold.it/100x100">
+                </td>
+                <td>
+                    Smoothie
+                </td>
+                <td class="cart__quantity">
+                    1
+                </td>
+                <td> 
+                    16 oz
+                </td>
+                <td>
+                    $10.00
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Subtotal</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>CA Tax</td>
+                <td>$0.90</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Tip</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total</td>
+                <td>$12.50</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<div class="row">
+    <div class="medium-4 end">
+        <h2 class="text-center">Tips</h2>
+        <ul class="small-block-grid-1 medium-block-grid-2">
+            <li>
+                <div class="cart__tip">10%</div>
+            </li>
+            <li>
+                <div class="cart__tip">15%</div>
+            </li>
+            <li>
+                <div class="cart__tip">20%</div>
+            </li>
+            <li>
+                <div class="cart__tip">25%</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="medium-4 medium-offset-6 columns">
+        <a class="btn">Checkout</a>
+    </div>
+</div>
+<div class="row">
+    <div class="columns">
+        <%= link_to '', root_path, class: 'fa fa-home fa-5x'  %>
+    </div>
+</div>

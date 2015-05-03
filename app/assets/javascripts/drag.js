@@ -5,12 +5,12 @@ $( document ).ready(function() {
 
     Sortable.create(ingredients, {
       group: "sorting",
-      sort: true
+      sort: true,
     });
 
     // sort: false
     Sortable.create(container, {
       group: "sorting",
-      sort: true
+      sort: true,
     });
 });
