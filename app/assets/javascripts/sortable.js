@@ -167,7 +167,6 @@
     this.el = el; // root element
     this.options = options = (options || {});
 
-
     // Default options
     var defaults = {
       group: Math.random(),
