@@ -16,6 +16,12 @@ $( document ).ready(function() {
     Sortable.create(container, {
       group: "sorting",
       sort: true,
+      onAdd: function(/**Event*/evt){
+        if (evt.path[1].childElementCount > 8) {
+          evt.item.remove();
+          alert('you can not add more than 8 items');
+        };
+      }
     });
 
     Sortable.create(ingredients2, {
