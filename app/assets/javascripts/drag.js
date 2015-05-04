@@ -5,8 +5,11 @@ $( document ).ready(function() {
     var container = document.getElementById('js-container');
 
     Sortable.create(ingredients, {
-      group: "sorting",
-      sort: true,
+      group: { name: "sorting", pull: 'clone' },
+      sort: false,
+      onAdd: function(/**Event*/evt){
+        evt.item.remove();
+      }
     });
 
     // sort: false
@@ -16,7 +19,10 @@ $( document ).ready(function() {
     });
 
     Sortable.create(ingredients2, {
-      group: "sorting",
-      sort: true,
+      group: { name: "sorting", pull: 'clone' },
+      sort: false,
+      onAdd: function(/**Event*/evt){
+        evt.item.remove();
+      }
     });
 });
