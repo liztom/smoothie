@@ -7,6 +7,7 @@ $( document ).ready(function() {
     Sortable.create(ingredients, {
       group: { name: "sorting", pull: 'clone' },
       sort: false,
+      draggable: '.ingredient',
       onAdd: function(/**Event*/evt){
         evt.item.remove();
       }
@@ -16,19 +17,15 @@ $( document ).ready(function() {
     Sortable.create(container, {
       group: "sorting",
       sort: true,
+      draggable: '.ingredient',
       onAdd: function(/**Event*/evt){
         if (evt.path[1].childElementCount > 8) {
           evt.item.remove();
           alert('you can not add more than 8 items');
-        };
-      }
-    });
-
-    Sortable.create(ingredients2, {
-      group: { name: "sorting", pull: 'clone' },
-      sort: false,
-      onAdd: function(/**Event*/evt){
-        evt.item.remove();
+        } else {
+          console.log(evt)
+          evt.item.style.width = '100%';
+        }
       }
     });
 });

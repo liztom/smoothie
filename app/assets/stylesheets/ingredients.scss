@@ -1,15 +1,16 @@
-.ingredients {
-    min-height: 500px;
-}
-
 .ingredient {
     background-color: $color-secondary;
     height: 100px;
-    width: 100%;
+    width: 15%;
     text-align: center;
     line-height: 100px;
     color: black;
     border-radius: 5%;
     cursor: pointer;
     margin: 5px 0;
+    display: inline-block;
+}
+
+.ingredient .active {
+    width: 100%;
 }
