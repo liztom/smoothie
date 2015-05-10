@@ -13,7 +13,7 @@
     <div class="columns medium-2">
         <div class="side-menu">
             <% for category in @categories %>
-                <div class="side-menu__categories">
+                <div class="side-menu__categories js-category" data-category-id="<%= category.id %>">
                     <%= category.name %>
                 </div>
             <% end %>
@@ -24,7 +24,9 @@
             <div class="columns medium-12">
                 <div id="js-ingredients" class="ingredients">
                     <% for ingredient in @ingredients %>
-                        <div class="ingredient"><%= ingredient.name %></div>  
+                        <div class="ingredient js-ingredients" data-category="<%= ingredient.category.id %>">
+                            <%= ingredient.name %>
+                        </div>  
                     <% end %>
                 </div>
             </div>

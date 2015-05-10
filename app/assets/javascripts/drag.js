@@ -8,22 +8,20 @@ $( document ).ready(function() {
       group: { name: "sorting", pull: 'clone' },
       sort: false,
       draggable: '.ingredient',
-      onAdd: function(/**Event*/evt){
+      onAdd: function(evt){
         evt.item.remove();
       }
     });
 
-    // sort: false
     Sortable.create(container, {
       group: "sorting",
       sort: true,
       draggable: '.ingredient',
-      onAdd: function(/**Event*/evt){
+      onAdd: function(evt){
         if (evt.path[1].childElementCount > 8) {
           evt.item.remove();
           alert('you can not add more than 8 items');
         } else {
-          console.log(evt)
           evt.item.style.width = '100%';
         }
       }
