@@ -1,4 +1,4 @@
-class Slugs < ActiveRecord::Migration
+class CreateSlugs < ActiveRecord::Migration
   def change
     add_column :bases, :slug, :string
     remove_column :ingredients, :price, :integer
