@@ -24,18 +24,12 @@
     </div>
     <div class="columns medium-9">
         <ul class="small-block-grid-1 medium-block-grid-2">
-            <li>
-                <%= link_to 'Juice', juice_path, class: "btn btn--large" %>
-            </li>
-            <li>
-                <%= link_to 'Acai', acai_path, class: "btn btn--large" %>
-            </li>
-            <li>
-                <%= link_to 'Salad', salad_path, class: "btn btn--large" %>        
-            </li>
-            <li>
-                <%= link_to 'Smoothie', smoothie_path, class: "btn btn--large" %>
-            </li>
+            <% for base in @bases %>
+                <li>
+                    <%= link_to base.name, basis_path(base.id), class: "btn btn--large" %>    
+                </li>
+            <% end %>
+            
         </ul>
     </div>
 </div>
