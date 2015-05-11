@@ -16,6 +16,7 @@ gem 'cancancan'
 gem 'activeadmin', github: 'activeadmin'
 gem 'foundation-rails'
 gem 'font-awesome-sass'
+gem 'slick_rails'
 
 group :development do
   gem 'byebug'

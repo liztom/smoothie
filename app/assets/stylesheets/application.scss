@@ -10,7 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
-
+ *= require slick
+ *= require slick-theme 
  */
 
 /* Foundation */
@@ -33,4 +34,4 @@
 @import "navigation";
 @import "cart";
 @import "side-menu";
-
+@import "slider";
