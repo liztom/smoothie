@@ -11,6 +11,12 @@
     display: inline-block;
 }
 
-.ingredient .active {
-    width: 100%;
+.ingredient--container {
+    @extend .ingredient;
+    width: 90%;
+    max-width:90%;
+    margin: 5px auto;
+    display: block; 
+    height: 40px;
+    line-height: 40px;
 }

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/cart', to: 'static_pages#cart', as: 'cart'
   get '/menu', to: 'bases#index', as: 'menu'
   
-  resources :categories 
-  resources :bases
+  resources :bases do
+    resources :categories 
+  end 
 end
