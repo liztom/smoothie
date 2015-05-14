@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title><%= content_for?(:title) ? yield(:title) : "Level Up" %></title>
-
+    <link href="https://fontastic.s3.amazonaws.com/JmTcX5crqqWEVBDp6E7gnM/icons.css" rel="stylesheet">
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
@@ -15,7 +15,7 @@
   </head>
 
   <body class="js-droppable">
-    <div class="row nav">
+    <div class="row nav small-uncollapse">
         <div class="columns small-6 medium-4">
             <%= link_to image_tag('level-up.png', class: 'navbar__logo'), root_path%>
         </div>

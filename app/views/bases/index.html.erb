@@ -23,10 +23,16 @@
         </p>
     </div>
     <div class="columns medium-9">
-        <ul class="small-block-grid-1 medium-block-grid-2">
+        <ul class="small-block-grid-2">
             <% for base in @bases %>
                 <li>
-                    <%= link_to base.name, basis_path(base.id), class: "btn btn--large" %>    
+                    <%= link_to(basis_path(base.id)) do %>
+                        <div class="base__icon icon icon-<%= base.name.downcase %>">
+                        </div>    
+                        <div class="base__name">
+                            <%= base.name %>
+                        </div>  
+                    <% end %>
                 </li>
             <% end %>
         </ul>
