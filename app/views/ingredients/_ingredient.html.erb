@@ -1,0 +1,5 @@
+<% for ingredient in @ingredients %>
+  <div class="js-ingredient ingredient" data-ingredient="<%= ingredient.name %>" data-category="<%= ingredient.category.id %>">
+      <%= ingredient.name %>
+  </div>  
+<% end %>

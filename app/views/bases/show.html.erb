@@ -13,6 +13,7 @@
 <div class="row">
     <div class="columns small-12">
         <div id="js-ingredients" class="js-ingredient-slider ingredients">
+            <%= render ('ingredients/ingredient') %>
             <% for ingredient in @ingredients %>
                 <div class="js-ingredient ingredient" data-ingredient="<%= ingredient.name %>" data-category="<%= ingredient.category.id %>">
                     <%= ingredient.name %>
@@ -24,13 +25,13 @@
 <div class="row">
     <div class="columns small-3 medium-2">
         <div class="side-menu">
-                <%= link_to(basis_path(params[:id])) do %>
+                <%= link_to(basis_category_path(params[:id], 'all'), remote: true)  do %>
                   <div class="side-menu__categories js-category">
-                  All
+                      All
                   </div>
                 <% end %>
             <% for category in @categories %>
-                <%= link_to(basis_category_path(params[:id], category.id)) do %>
+                <%= link_to(basis_category_path(params[:id], category.id), remote: true) do %>
                   <div class="side-menu__categories js-category" data-category-id="<%= category.id %>">
                   <%= category.name %>
                   </div>

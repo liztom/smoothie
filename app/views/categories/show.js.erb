@@ -1,0 +1,9 @@
+$('.js-ingredient-slider').slick('unslick');
+$('#js-ingredients').empty();
+$('#js-ingredients').append('<%= j render("ingredients/ingredient") %>');
+$('.js-ingredient-slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  arrows: true
+});

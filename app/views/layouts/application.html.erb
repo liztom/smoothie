@@ -7,7 +7,6 @@
     <title><%= content_for?(:title) ? yield(:title) : "Level Up" %></title>
 
     <%= stylesheet_link_tag    "application" %>
-
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
 
@@ -15,7 +14,7 @@
     
   </head>
 
-  <body>
+  <body class="js-droppable">
     <div class="row nav">
         <div class="columns medium-4">
             <%= link_to image_tag('http://placehold.it/250x250/&text=Logo'), root_path %>

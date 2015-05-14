@@ -8,7 +8,7 @@ $( document ).ready(function() {
     arrows: true
   });
 
-  $('.js-ingredient').on('click', function(){
+  $('.js-ingredient-slider').on('click', '.js-ingredient', function(){
     if($('.js-container').find('.js-container-ingredient').length < 8) {
       var ingredient = $(this).attr('data-ingredient');
       ($container).append('<div class="js-container-ingredient ingredient--container" draggable=true>' + ingredient + '</div>');
@@ -17,9 +17,12 @@ $( document ).ready(function() {
     }
   });
 
-  $('.js-container').on('drag','.js-container-ingredient', function(event){
+  $('.js-container').on('click','.js-container-ingredient', function(event){
     $(this).remove();
   });
 
 });
+
+
+
 
