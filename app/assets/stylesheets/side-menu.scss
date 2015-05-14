@@ -11,4 +11,7 @@
     &:hover {
         background-color: darken($color-success, 20%);
     }
+    @media #{$small-only}{
+        font-size: 12px;
+    }
 }
