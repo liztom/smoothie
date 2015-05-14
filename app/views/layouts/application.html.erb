@@ -16,10 +16,10 @@
 
   <body class="js-droppable">
     <div class="row nav">
-        <div class="columns medium-4">
-            <%= link_to image_tag('http://placehold.it/250x250/&text=Logo'), root_path %>
+        <div class="columns small-6 medium-4">
+            <%= link_to image_tag('level-up.png', class: 'navbar__logo'), root_path%>
         </div>
-        <div class="columns medium-8">
+        <div class="columns small-6 medium-8 navbar__title">
             <% if @base %>
                 <h1><%= @base.name %></h1>    
             <% end %>
