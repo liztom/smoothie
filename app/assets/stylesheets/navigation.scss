@@ -6,6 +6,9 @@
     width: 100%;  
     margin-bottom: 50px;
     padding-left: 0;
+    @media #{$small-only}{
+      margin-bottom: 20px;
+    }
 }
 
 .sub-nav__item {
