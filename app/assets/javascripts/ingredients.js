@@ -1,7 +1,6 @@
 $( document ).ready(function() {
   var $container = $('.js-container');
   var $coin      = $('#coin');
-  var $poof      = $('#poof');
 
   console.log($coin);
   $('.js-ingredient-slider').slick({
@@ -22,7 +21,6 @@ $( document ).ready(function() {
   });
 
   $('.js-container').on('click','.js-container-ingredient', function(event){
-    $poof[0].play();
     $(this).remove();
   });
 
